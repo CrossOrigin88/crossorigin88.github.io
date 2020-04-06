@@ -1,0 +1,40 @@
+header {
+    .nav {
+        &-link {
+            color: $white;
+
+            div {
+                font-family: $font-TSTbackpower;
+                font-size: 26px;
+                margin-bottom: -10px;
+            }
+
+            small {
+                font-family: $font-TSTunited;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+
+            @include media-breakpoint-down(lg) {
+                div {
+                    font-size: 1rem;
+                }
+            }
+
+            &:hover,
+            &.active {
+                div {
+                    color: $primary;
+                }
+            }
+
+            &-logo {
+                padding: unset;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
